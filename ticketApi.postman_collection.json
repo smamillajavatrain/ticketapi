@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "c4a95eae-6c05-4bd3-9ec7-64bc0f17d6e3",
+		"name": "ticketApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30330477",
+		"_collection_link": "https://sree-cmd-baseline-services.postman.co/workspace/baselineapi21092024~f3828fac-1b1d-4107-8ecf-bdfd59a0b360/collection/30330477-c4a95eae-6c05-4bd3-9ec7-64bc0f17d6e3?action=share&source=collection_link&creator=30330477"
+	},
+	"item": [
+		{
+			"name": "bookTicket",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fromStation\": \"London\",\r\n    \"toStation\": \"France\",\r\n    \"firstName\": \"Kalyani\",\r\n    \"lastName\": \"Mamillapalli\",\r\n    \"email\": \"kalyanimamillapalli@example.com\",\r\n    \"pricePaid\": 20.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/tickets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tickets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateTicket",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fromStation\": \"London\",\r\n    \"toStation\": \"Newyork\",\r\n    \"firstName\": \"Vihas\",\r\n    \"lastName\": \"Mamillapalli\",\r\n    \"email\": \"kalyanimamillapalli@example.com\",\r\n    \"pricePaid\": 20.0,\r\n    \"id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/tickets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tickets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "viewTicket",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/tickets/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tickets",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "removeTicket",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/tickets/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tickets",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
