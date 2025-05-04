@@ -23,4 +23,15 @@ public interface TrainService {
 	public String removeUser(String email);
 
 	public Ticket modifySeat(String email, String newSection);
+	
+//	################################DB Services Starts from here####################################
+	public Ticket dbPurchaseTicket(User user);
+
+	public Ticket dbGetReceipt(String email);
+
+	public List<Map<String, String>> getDBUsersBySection(String section);
+
+	public String removeDbUser(String email);
+
+	public Ticket dbmodifySeat(String email, String newSection);
 }
